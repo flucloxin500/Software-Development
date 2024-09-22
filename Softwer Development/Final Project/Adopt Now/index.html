@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description"
+    content="Adopt Now is a site aimed at promoting the adoption of pets that need a home to call their own.">
+  <meta name="keywords"
+    content="adoption, for adoption, to adopt, about adoption, adoption of, adopting is, adopt one, adoption is, of adoption, adopt, adopt here, dog, cat, pets, online paws, paws">
+  <!-- Favicon created here: https://favicon.io/ -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <title> Adopt now!</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/190e245c5e.js" crossorigin="anonymous"></script>
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="">
+          <span class="fas fa-paw"></span> Adopt Now
+        </a>
+
+        <!-- This code is hidden on larger screens. -->
+        <input type="checkbox" id="check-menu">
+
+        <div class="burger-menu">
+          <label for="check-menu">
+            <svg class="burger" width="51" height="51" viewBox="0 0 51 51" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.375 14.875H44.625" stroke="#efef42" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M6.375 25.5H44.625" stroke="#efef42" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M6.37488 36.0625H28.0002" stroke="#efef42" stroke-width="3.5" stroke-linecap="round" />
+            </svg>
+            <svg class="close" width="26" height="26" viewBox="0 0 26 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 23L3 3" stroke="#f16d6d" stroke-width="5.5" stroke-linecap="round" />
+              <path d="M3 23L23 3" stroke="#f16d6d" stroke-width="5.5" stroke-linecap="round" />
+            </svg>
+          </label>
+        </div> <!-- .burger-menu -->
+
+
+        <ul class="nav__links">
+          <li>
+            <a class="nav__link" href="#home" style="border-radius: 10px;">Home</a>
+          </li>
+          <li>
+            <a class="nav__link nav__link--bgc-white" href="#adoption" style="border-radius: 10px;">Adoption</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#about"style="border-radius: 10px;">About</a>
+          </li>
+        </ul> <!-- .nav__links -->
+      </nav> <!-- .nav -->
+    </header>
+
+    <main>
+      <section class="homepage" id="home">
+        <div class="homepage__content">
+          <h1 class="title">
+            Change <strong>lives</strong>
+          </h1>
+          <p class="homepage__text">
+            You won't change the world by adopting a animal, but you will change that animal's world.
+          </p>
+          <a class="btn" href="#adoption">Adopt</a>
+        </div> <!-- .homepage__content -->
+      </section> <!-- .homepage -->
+
+      <section class="adoption" id="adoption">
+        <h2 class="title title--medium">
+          <strong>Adoption</strong>
+        </h2>
+
+        <div class="adoption__cards">
+          <figure class="card">
+            <img class="card__img" src="images/pets/1.png" alt="Image of a cute dog named Fusca">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Fusca</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> July/2011 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>This is Fusca, a lively boy who feels very sad in his small space, always asking for affection.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Fusca">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/2.png" alt="Image of a cute cat named Aramis">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Aramis</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> July/2013 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Aramis is wary and keeps to himself. Who knows what he's been through? He needs a stable home to
+                    become a sociable and affectionate furry friend.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Aramis">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/java-dog2.png" alt="Image of a cute dog named Java">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Java</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> February/2014 <br>
+                  <strong>Sex:</strong> Female <br>
+
+                  <q>Shy and needy, this is the profile of our little Java.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Java">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/3.png" alt="Image of a cute dog named Pascal">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Pascal</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> February/2014 <br>
+                  <strong>Sex:</strong> Male <br>
+
+
+                  <q>He's not even an adult yet and has already suffered so much! Pascal is Java's brother, he's been
+                    with us since he was a puppy, and has always been timid and scared.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Pascal">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/4.png" alt="Image of a cute dog named Salvatore">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Salvatore</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> April/2012 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Salvatore has a beautiful build and a difficult temperament. He's a dog with no hint of aggression,
+                    but very fearful!</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Salvatore">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/caetano-dog5.png" alt="Image of a cute dog named Caetano">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Caetano</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> June/2014 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Caetano had a rough childhood, but thankfully he's doing well now. A bit shy, he needs to be won
+                    over to show his beautiful smile!</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Caetano">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/5.png" alt="Image of a cute dog named Chico">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Chico</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> December/2012 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Chico is very affectionate and friendly, gets along well with other animals, and is completely
+                    independent.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Chico">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/jorjao-dog7.png" alt="Image of a cute dog named Jorjão">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Jorjão</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> May/2006 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>This is Jorge, better known as Jorjão due to his impressive size and peculiar temperament. Jorjão
+                    is sweet... with close friends!</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Jorjão">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/6.png" alt="Image of a cute dog named Manguinho">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Manguinho</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> February/2016 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Manguinho is a charmer! He arrived with a healed fracture in his leg, which doesn't stop him from
+                    doing anything! He really wants to go to a new home!</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Manguinho">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/7.jpg" alt="Image of a cute dog named Elliot">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Elliot</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> March/2011 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>A playful guy with lots of energy and love to give. This is Elliot, he is extremely loyal and
+                    affectionate! Not to mention his charm, right?</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Elliot">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/8.jpeg" alt="Image of a cute dog named Kinder">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Kinder</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> September/2012 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>A friendly guy looking for a home and a family. This boy is very affectionate, active, and
+                    playful.</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Kinder">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+
+
+          <figure class="card">
+            <img class="card__img" src="images/pets/9.png" alt="Image of a cute dog named Cido">
+
+            <figcaption class="card__content">
+              <article class="card__pet-about">
+                <h3 class="card__pet-name">Cido</h3>
+                <p class="card__pet-info">
+                  <strong>Birthdate:</strong> October/2008 <br>
+                  <strong>Sex:</strong> Male <br>
+
+                  <q>Cido's cheerful expression perfectly represents his personality: a very active and affectionate dog
+                    who needs a home. He loves being petted and is very sweet!</q>
+                </p>
+              </article> <!-- .card__pet-about -->
+              <a class="btn btn--small" href="form.html" target="_blank"
+                rel="noopener external" title="Adopt Cido">
+                Adopt
+              </a>
+            </figcaption>
+          </figure>
+        </div> <!-- .adoption__cards -->
+      </section> <!-- .adoption -->
+    </main>
+
+    <footer class="footer" id="about">
+      <section class="footer__content">
+        <div class="footer__wrapper-content">
+          <article class="footer__about">
+            <h2 class="title title--small">About</h2>
+            <p class="footer__text">
+              Adopt Now is a website aimed at promoting the adoption of pets who need a home to call their own. The pets
+              available for adoption here were selected through the site <a href="https://thelovepetproject.wordpress.com/available-for-adoption/"
+                target="_blank" rel="noopener external"><strong>The love pet project</strong></a>, and some of them may have
+              already been adopted (which warms my heart). If you really want a pet, give them a chance and
+              <strong>ADOPT</strong>, don't buy!
+            </p>
+          </article> <!-- .footer__about -->
+
+          <div class="footer__links">
+            <a class="logo" href="">
+              <span class="fas fa-paw"></span> Adopt Now
+            </a>
+
+            <ul class="footer__social-medias">
+              <li>
+                <a href="https://www.instagram.com/error__owner?igsh=MWxjMjI1cGV1ejI4aQ%3D%3D&utm_source=qr" target="_blank" rel="noopener external">
+                  <span class="fab fa-instagram-square"></span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://www.facebook.com/ErrorOwner?mibextid=LQQJ4d" target="_blank" rel="noopener external">
+                  <span class="fab fa-facebook-square"></span>
+                </a>
+              </li>
+            </ul>
+          </div> <!-- .footer__links -->
+        </div> <!-- .footer__wrapper-content -->
+
+        <div class="footer__copyright">
+          <p class="footer__text">
+            <a href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank"
+              rel="noreferrer noopener external"><strong>Tarek Aziz Walid</strong></a> &copy; 2024 - All rights
+            reserved. <br>
+            <span>Website developed for educational purposes.</span>
+          </p>
+        </div>
+      </section> <!-- .footer__content -->
+    </footer>
+  </div>
+</body>
+
+</html>

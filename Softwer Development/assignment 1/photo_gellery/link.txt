@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <button><p><a href="https://www.google.com/">Google</a></p></button>
+    <br />
+    <br />
+    <a href="assignment.html" target="_blank">goto first page</a>
+</body>
+</html>

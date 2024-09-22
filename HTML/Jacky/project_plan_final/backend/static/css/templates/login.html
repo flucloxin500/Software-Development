@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Flask App</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <body>
+            <header>
+                <div class="fill">
+                    <div id='login-form' class='login-page'>
+                        <div class="form-box">
+                            <div class='button-box'>
+                                <div id='btn'> </div>
+                                <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                                <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                            </div>
+                            <form id='login' class='input-group-login' action="/login" method="post">
+                                <input type='text' class='input-field' placeholder='Email Id' required>
+                                <input type='password' class='input-field' placeholder='Enter Password' required>
+                                <input type='checkbox' class='check-box'><span class="id">Remember Password</span>
+                                <button type='submit' class='submit-btn'>Log in</button>
+                            </form>
+                            <form method="POST" action="/register">
+                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                <input type="text" name="email" class="form-control" placeholder="E-Mail">
+                                <input type="text" name="fname" class="form-control" placeholder="First Name">
+                                <input type="text" name="lname" class="form-control" placeholder="Last Name">
+                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" name="confirm-password" class="form-control" placeholder="Confirm Password">
+                                <p>Already Registered? <a href="/login"> Click Here</a></p>
+                                <button type="submit">Register</button>
+                            </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var x = document.getElementById('login');
+                    var y = document.getElementById('register');
+                    var z = document.getElementById('btn');
+                    function register() {
+                        x.style.left = '-400px';
+                        y.style.left = '50px';
+                        z.style.left = '110px';
+                    }
+                    function login() {
+                        x.style.left = '50px';
+                        y.style.left = '450px';
+                        z.style.left = '0px';
+                    }
+                </script>
+                <script>
+                    var modal = document.getElementById('login-form');
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+        </body>
+</html>

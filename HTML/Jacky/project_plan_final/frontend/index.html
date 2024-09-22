@@ -1,0 +1,820 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        .navbar {
+            background: black;
+            display: flex;
+            align-items: center;
+            width: 1220px;
+            margin-left: 150px;
+            /* padding: 20px; */
+            padding-left: 50px;
+            padding-right: 30px;
+        }
+
+        .banner {
+            margin-top: 10px;
+            height: 600px;
+            width: 1300px;
+            margin-left: 150px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+            nav ul {
+                display: inline-block;
+                list-style: none;
+            }
+
+                nav ul li {
+                    display: inline-block;
+                    margin-right: 70px;
+                }
+
+                    nav ul li a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: white;
+                        font-family: sans-serif;
+                    }
+
+                    nav ul li button {
+                        font-size: 20px;
+                        color: white;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+                    }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            /* color: palevioletred;
+font-size: 28px; */
+        }
+
+        nav ul li button:hover {
+            color: rgb(34, 219, 175);
+        }
+
+        nav ul li a:hover {
+            color: rgb(34, 219, 175);
+        }
+
+        .pic {
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+
+        .card {
+            display: flex;
+            gap: 20px;
+            margin-left: 150px;
+        }
+
+        .collection {
+            width: 648px;
+            height: 350px;
+            border-radius: 20px;
+            background: radial-gradient(206.03% 76.54% at 96.3% 9%, #6CDDFF 0%, #58C4E4 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        .collection-2 {
+            width: 648px;
+            height: 350px;
+            border-radius: 20px;
+            background: radial-gradient(464.18% 133.85% at 0% 100%, #14ba86 70.66%, #0b4734cf 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            padding-top: 30px;
+            padding-left: 50px;
+            color: #FFF;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        .text-1 {
+            padding-left: 50px;
+            color: #FFF;
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .id-2 {
+            color: #FBD103;
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .id-3 {
+            color: black;
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .shop {
+            padding: 10px 30px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            color: var(--Dark-Grey---Fashion, #323232);
+            font-size: 18px;
+            font-weight: 700;
+            width: 174px;
+            height: 52px;
+            border-radius: 1000px;
+            background: #FFF;
+            border: none;
+        }
+
+        .kutu {
+            background-image: url(../static/images/Rectangle\ 12.png);
+            background-repeat: no-repeat;
+        }
+
+        .baby {
+            width: 445px;
+            height: 470px;
+        }
+
+        .h2 {
+            color: var(--Dark-Grey---Fashion, #323232);
+            font-size: 60px;
+            font-weight: 400;
+        }
+
+        .h1 {
+            color: #000;
+            font-size: 80px;
+            font-weight: 700;
+            margin-left: 80px;
+            padding-top: 20px;
+        }
+
+        .p {
+            color: #004743;
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: -70px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+
+        .shop-2 {
+            width: 224px;
+            height: 70px;
+            margin-top: 20px;
+            border: none;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            border-radius: 1000px;
+            background: var(--Primary-Green---Fashion, #004743);
+        }
+
+        .card-2 {
+            display: flex;
+            justify-content: space-around;
+            opacity: 0.74;
+            background: lightgray 50% / cover no-repeat;
+            width: 1300px;
+            height: 450px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .new {
+            color: var(--Dark-Grey---Fashion, #323232);
+            text-align: center;
+            font-family: Ubuntu;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .check {
+            color: #323232;
+            text-align: center;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: -35px
+        }
+
+        .collection-container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .collection-card {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+            .collection-card img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop:hover {
+            background-color: #45a049;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .deals-section {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .brand-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .brand-card {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .brand-card img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .brand-card p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+        .trend-2 {
+            color: var(--Dark-Grey---Fashion, #323232);
+            text-align: center;
+            font-family: Ubuntu;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            /* margin-left: 650px; */
+            /* margin-top: 150px; */
+        }
+
+        .trending-section {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .custom-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .custom-card {
+            /* width: 30%; */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+            .custom-card img {
+                width: 100%;
+                height: auto;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+        .custom-details {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .custom-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+            .custom-icons span {
+                font-size: 20px;
+            }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .grid {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 50px;
+        }
+
+        .product-rev {
+            margin-top: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .review-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .review-image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .review-image {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+        }
+
+            .review-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .star {
+            color: #f39c12;
+        }
+
+        .newsletter {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffc6f4;
+            box-shadow: 0 0 10px rgba(216, 65, 65, 0.1);
+            border-radius: 8px;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #4a4947;
+            text-align: center;
+        }
+
+        p {
+            color: #1f1f20;
+        }
+
+        .highlight {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #5d6a75;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            width: 50%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ccc42e;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer-container {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-section {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        .email {
+            color: white;
+        }
+
+
+        .contact-info h2 {
+            color: #e74c3c;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .quick-links-section {
+            flex-grow: 1;
+        }
+
+        .quick-links h2 {
+            color: #e74c3c;
+        }
+
+        .quick-links p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+            .social-icons a {
+                display: inline-block;
+                margin: 0 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href='/iiuc.women'>Women</a></li>
+                    <li><a href='/iiuc.men'>Men</a></li>
+                    <li><a href='/iiuc.kid'>Kids</a></li>
+                    <li><a href='/contact'>Contact</a></li>
+                    <li><a href='/about'>About</a></li>
+                    <li><a href="/reviews">Review</a></li>
+                    <li>
+                        {% if current_user.is_authenticated %}
+                        <a href="/dashboard">Dashboard</a>
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if not current_user.is_authenticated %}
+                        <a href="/login">Login</a>
+                        {% endif %}
+                    </li>
+
+                </ul>
+            </nav>
+         </div>
+         <section >
+            <img class="banner" src="static/images/fe.jpg" alt="">
+           </section>
+    </header>
+    <main>
+        <div class="pic">
+            <img src="static/images/image 8 (1).png" alt="">
+        </div>
+        <section>
+            <div class="card">
+                    <div class="collection">
+                        <div>
+                            <h3 class="text">Collection For <br>
+                                Girls</h3>
+                               <h4 class="text-1">Up To <span class="id-2">40% </span>Off</h4>
+                               <a class="shop" href='/iiuc.women'>Shop Now</a>
+                        </div>
+                         
+                         <div>
+                            <img src="static/images/image 9.png" alt="">
+                        </div>
+                    </div>
+                <div class="collection-2">
+                        <div>
+                            <h3 class="text">Collection For
+                                Boys</h3>
+                               <h4 class="text-1">Up To <span class="id-3">40% </span>Off</h4>
+                               <a class="shop" href="/iiuc.men/index.html">Shop Now</a>
+                              
+                        </div>
+                        <div>
+                            <img src="static/images/men_small 1.png" alt="">
+                        </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <div>
+                    <h2 class="h2">Baby & Kids Fashion</h2>
+                    <div class="kutu">
+                        <h3 class="h1">SALE!</h3>
+                        <p class="p">07 to 14 Febuary</p>
+                        <a class="shop" href="/iiuc.kid">Shop Now</a>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img class="baby" src="static/images/image 10.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="new">
+            <h2>New Arrivals</h2>
+            <p class="check">Check out most promising product bought by our buyers</p>
+        </section>
+        <section>
+            <div class="collection-container">
+                <div class="collection-card">
+                    <img src="static/images/image 15.png" alt="Yellow T-Shirt">
+                    <h3>Ethnic Kurti</h3>
+                    <p>Price: $220.00</p>
+                    <button><a href="/checkout">Add to Cart</a></a> </button>
+                </div>
+            
+                <div class="collection-card">
+                    <img src="static/images/image 14 (1).png" alt="Ethnic Kurti">
+                    <h3>Kurti Full Sleev</h3>
+                    <p>Price: $300.00</p>
+                    <button><a href="/checkout">Add to Cart</a></button>
+                </div>
+            
+                <div class="collection-card">
+                    <img src="static/images/image 16.png" alt="Kurtis, Tunics & Tops">
+                    <h3>Kurtis& Tops</h3>
+                    <p>Price: $280.00</p>
+                    <button><a href="/checkout">Add to Cart</a></button>
+                </div>
+                <div class="collection-card">
+                    <img src="static/images/image 17.png" alt="Round Neck T-shirt">
+                    <h3>Round T-shirt</h3>
+                    <p>Price: $120.00</p>
+                    <button><a href="/checkout">Add to Cart</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-section">
+            <h2>Featured Deals</h2>
+        
+            <div class="brand-container">
+                <div class="brand-card">
+                    <img src="static/images/image 19 (2).png" alt="Brand 1">
+                    <p>Up to 50% off</p>
+                </div>
+        
+                <div class="brand-card">
+                    <img src="static/images/image 20 (1).png" alt="Brand 2">
+                    <p>Limited-time offer</p>
+                </div>
+        
+                <div class="brand-card">
+                    <img src="static/images/image 21 (1).png" alt="Brand 3">
+                    <p>Exclusive discounts</p>
+                </div>
+            </div>
+        </section>
+       
+        <h2 class="trend-2">Trending Collection</h2>
+        <section class="trending-section">
+           
+        
+            <div class="custom-cards">
+                <div class="custom-card">
+                    <img src="static/images/image 15 (1).png" alt="Product 1">
+                    <div class="custom-details">
+                        <h3>Product 1</h3>
+                        <div class="custom-icons">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span>&#10084;</span>
+                            <span>&#128722;</span>
+                        </div>
+                        <p>Price: $30.00</p>
+                        <button><a href="/checkout">Add to Cart</a></button>
+                    </div>
+                </div>        
+            </div>
+            <div class="custom-cards">
+                <div class="custom-card">
+                    <img src="static/images/image 16 (1).png" alt="Product 1">
+                    <div class="custom-details">
+                        <h3>Product 1</h3>
+                        <div class="custom-icons">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span>&#10084;</span>
+                            <span>&#128722;</span>
+                        </div>
+                        <p>Price: $30.00</p>
+                        <button><a href="/checkout">Add to Cart</a></button>
+                    </div>
+                </div>
+         </div>
+            <div class="custom-cards">
+                <div class="custom-card">
+                    <img src="static/images/image 17 (1).png" alt="Product 1">
+                    <div class="custom-details">
+                        <h3>Product 1</h3>
+                        <div class="custom-icons">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span>&#10084;</span>
+                            <span>&#128722;</span>
+                        </div>
+                        <p>Price: $30.00</p>
+                        <button><a href="/checkout">Add to Cart</a></button>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+    
+         
+        <div class="newsletter">
+            <h1>Subscribe to Our Colorful Newsletter!</h1>
+            <p>Stay updated with the latest news and promotions. Join our vibrant community today.</p>
+        
+            <form action="#" method="post" class="form-container">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+        
+            <div class="footer">
+                <p>Follow us on social media:</p>
+                <a href="#" style="color: #68c0ec;">Facebook</a> |
+                <a href="#" style="color: #2b7474;">Twitter</a> |
+                <a href="#" style="color: #cd31ab;">Instagram</a>
+            </div>
+        </div>
+        
+        
+        
+    </main>
+    <div class="footer-container">
+        <div class="contact-info">
+            <div class="contact-info-section">
+                <h2>Contact Us</h2>
+                <p class="email">Email:fashionera@example.com</p>
+                <p class="email">Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="quick-links-section">
+                <h2>Quick Links</h2>
+                <p><a href="#">Support</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Store</a></p>
+            </div>
+        </div>
+    
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+    
+</body>
+</html>

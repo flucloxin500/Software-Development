@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Next Gen GOAT</title>
+    <style>
+        .photo {
+            margin-left: 570px;
+        }
+
+        .color {
+            color: rgb(213, 48, 48);
+            background-color: thistle;
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+            display: inline-block;
+            margin-left: 695px;
+        }
+
+        .click {
+            color: rgb(12, 82, 82);
+            text-align: center;
+            background-color: cadetblue;
+            border-radius: 15px;
+            padding: 10px;
+            display: inline-block;
+            margin-left: 695px;
+        }
+
+        .article {
+            background-color: skyblue;
+            width: 1000px;
+            margin-left: 420px;
+            border-radius: 15px;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="color">Future GOAT for Soccer era</h1>
+    <br>
+    <img class="photo" src="GOAT.JPG" alt="Unable to load the Snap" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="134,44,270,550" href="Kimmich.html" alt="">
+        <area shape="rect" coords="270,44,433,550" href="Pedri.html" alt="">
+        <area shape="rect" coords="435,44,600,550" href="Jamal.html" alt="">
+    </map>
+    <h2 class="click"> Tap on your idolo's Snap to look up more</h2>
+    <div class="article">
+        <p>
+            The picture is nothing but with 3 GOAT. Here GOAT is considering as 'Greatest of all time'. From left to
+            right , they are Joshua Kimmich , Pedri , Jamal Musiala.
+            Kimmich is a German Midfielder , Who's also playing for Bundesliga Club FC Bayern Munich.
+            Pedri is a Spanish midfielder, who's also playing LaLiga club FC Barcelona.
+            Jamal Musiala is a German Midfiled , who's also playing with alongside Joshua Kimmich. All of them are so
+            much talented.
+            They are like magic on the field. So, i consider all of them as future GOAT. You can see more pictures if
+            you click on every GOAT.
+        </p>
+    </div>
+</body>
+
+</html>

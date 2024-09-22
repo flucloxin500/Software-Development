@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    text-decoration: blue dotted underline;
+}
+a{
+    text-decoration: none;
+}
+#one{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+#two{
+    font-size: 20px;
+    line-height: normal;
+}
+#three{
+    font-size: 15px;
+}

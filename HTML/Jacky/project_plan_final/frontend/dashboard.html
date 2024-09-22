@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+           /* Reset default browser styles */
+        .home-button {
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            .home-button:hover {
+                background-color: #0056b3;
+            }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+
+<body>
+    <header>
+        <h1>
+            Welcome {{ current_user.fname }}!
+        </h1>
+        <!-- Home button -->
+        <a href="/" class="home-button">Home</a>
+        <a href="/logout" class="home-button">Log out</a>
+    </header>
+
+
+    <main>
+        <section id="order-history">
+            <h2>Order History</h2>
+            <!-- Display a table or list of previous orders -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loop through orders and display each order -->
+                    {% for order in orders %}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td>Coming Soon</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section id="account-details">
+            <h2>Account Details</h2>
+            <!-- Display customer's account information -->
+            <p>Name: {{ current_user.fname }}</p>
+            <p>Email: {{ current_user.email }}</p>
+            <p>Address: </p>
+            <!-- Other account details can be added here -->
+        </section>
+
+        <section id="recommendations">
+            <h2>Recommendations</h2
+            <p>Pay with <b>Bkash</b> to enjoy <b>10% cashback</b></p>
+            <!-- Display personalized product recommendations -->
+            <ul>
+                {% for product in recommended_products %}
+                <li>
+                    <a href="/">Home</a>
+                    <!-- Add the recommendation content -->
+                    Pay it Bkash to enjoy 10% cashback
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IIUC Simple Store . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

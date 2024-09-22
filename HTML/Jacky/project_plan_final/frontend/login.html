@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <style>
+        .fill {
+            height: 100%;
+            width: 100%;
+            /* background-image: url(../image/fe.jpg); */
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .navbar {
+            display: flex;
+            background: #292c44;
+            align-items: center;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 30px;
+            padding-top: 50px;
+        }
+
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 2% auto;
+            background: bisque;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #ff61241f;
+            border-radius: 30px;
+        }
+
+        .toggle-btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: #f393a1;
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #f393a1;
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+
+        span {
+            color: #292c44;
+            font-size: 12px;
+            bottom: 68px;
+            position: absolute;
+        }
+
+        #login {
+            left: 50px;
+        }
+
+            #login input {
+                color: black;
+                font-size: 15;
+            }
+
+        #register {
+            left: 450px;
+        }
+
+            #register input {
+                color: black;
+                font-size: 15;
+            }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Flask App</title>
+        <body>
+            <header>
+                <div class="fill">
+                    <div id='login-form' class='login-page'>
+                        <div class="form-box">
+                            <div class='button-box'>
+                                <div id='btn'> </div>
+                                <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                                <a href="/register"><button type='button' onclick='register()' class='toggle-btn'>Register</button></a>
+</div>
+                            <form id='login' class='input-group-login' method="POST" action="/login">
+                                <input type="text" name="username" class='input-field' placeholder='Username' required>
+                                <input type="password" name="password" class='input-field' placeholder='Password' required>
+                                <p>Not Registered? <a href="/register"> Click Here</a></p>
+                                <button class='submit-btn' type="submit">Login</button>
+                                <form 
+
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var x = document.getElementById('login');
+                    var y = document.getElementById('register');
+                    var z = document.getElementById('btn');
+                    function register() {
+                        x.style.left = '-400px';
+                        y.style.left = '50px';
+                        z.style.left = '110px';
+                    }
+                    function login() {
+                        x.style.left = '50px';
+                        y.style.left = '450px';
+                        z.style.left = '0px';
+                    }
+                </script>
+                <script>
+                    var modal = document.getElementById('login-form');
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+        </body>
+</html>
